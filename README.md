@@ -9,7 +9,7 @@ of inputs and the style of the form.
 * A single HTML page.
 * A single external style sheet (CSS).
 * Your form should use both HTML5 and JS validation to ensure that users' choices result in a real pizza order.
-* Your form should calculate the total for the pizza at the end of the form
+* Your form should calculate the total for the pizza at the end of the form, and display a subtotal, tax (8%), delivery fee, and total. Also display a suggested tip (15%).
 
 
 ### Slogan
@@ -20,6 +20,11 @@ haven't decided on a slogan yet. You get to write it.
 * Small
 * Medium
 * Large
+
+### Crust (choose at least one)
+* White
+* Wheat
+* Gluten-Free
 
 ### Sauces (choose at least one)
 * Robust Tomato
@@ -34,6 +39,7 @@ haven't decided on a slogan yet. You get to write it.
 * Ham
 * Chicken (+$0.50 extra)
 * Feta Cheese
+* Soy Cheese
 * Banana Peppers
 * Jalapeño Peppers
 * Onion
