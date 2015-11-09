@@ -46,7 +46,7 @@ haven't decided on a slogan yet. You get to write it.
 * Add bread sticks to order. (+$5.00 extra)
 
 ### Delivery or Pickup
-* Pickup or Delivery? ($5.00 Delivery Fee)
+* Pickup or Delivery? ($5.00 Delivery Fee) (If the user selects pickup, the address is not required, otherwise it must be filled out.)
 * Address (street, city, zip)
 * Phone number
 * email
