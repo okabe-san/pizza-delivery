@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Validation</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <hearder>
+      <div class="col-md-12">
+        <h1 class="text-center">Pizza Pizza Pizza</h1>
+      </div>
+    </header>
+
+
+    <!-- margin left -->
+    <div class="col-md-1">
+    </div>
+    <!-- main -->
+    <main class="col-md-10">
+      <!-- col 1 size -->
+    <form>
+      <section class="col-md-4">
+        <h2>Size (choose at least one)</h2>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="small" name="size">
+                SMALL
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="medium" name="size">
+                MEDIUM
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="large" name="size">
+                LARGE
+          </label>
+        </div>
+      </section>
+      <!-- col 2 crust -->
+      <section class="col-md-4">
+        <h2>Crust (choose at least one)</h2>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="white" name="crust">
+              WHITE
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="wheat" name="crust">
+              WHEAT
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="gluten-free" name="crust">
+              GLUTEN-FREE
+          </label>
+        </div>
+      </section>
+      <!-- col 3 sauces -->
+      <section class="col-md-4">
+        <h2>Sauces (choose at least one)</h2>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="tomato" name="sauce">
+              ROBUST TOMATO
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="bbq" name="sauce">
+              SPICY BBQ
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="cream" name="sauce">
+              CREAMY CREAM (+$1.50)
+          </label>
+        </div>
+      </section>
+      <!-- col 4 toppings -->
+      <section class="col-md-12">
+        <h2>Toppings ($0.75 each)</h2>
+        <div class="col-md-4">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="sausage" name="topping">
+                SAUSAGE
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="pepperoni" name="topping">
+                PEPPERONI
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="bacon" name="topping">
+                BACON (+$0.50 extra)
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="salami" name="topping">
+                SALAMI
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="ham" name="topping">
+                HAM
+            </label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="chichen" name="topping">
+                CHICKEN (+$0.50 extra)
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="feta" name="topping">
+                FETA CHEESE
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="soy" name="topping">
+                SOY CHEESE
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="banana" name="topping">
+                BANANA PEPPERS
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="jalapeno" name="topping">
+                JALAPENO PEPPERS
+            </label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="onion" name="topping">
+                ONION
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="olives" name="topping">
+                OLIVES
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="pineapple" name="topping">
+                PINEAPPLE
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="mushrooms" name="topping">
+                MUSHROOMS
+            </label>
+          </div>
+      </section>
+      <!-- col 5 options -->
+      <section class="col-md-12">
+        <h2>Other options</h2>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="extra-cheese" name="option">
+              EXTRA CHEESE (+$1.00 extra)
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="bread-sticks" name="option">
+                ADD BREAD STICKS TO ORDER (+$5.00 extra)
+          </label>
+        </div>
+      </section>
+      <!-- col 6 delivery -->
+      <section class="col-md-12">
+        <h2>Delivery or Pickup?</h2>
+        <p>$5.00 Delivery Fee.</p>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="true">
+              DELIVERY
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="false">
+              PICKUP
+          </label>
+        </div>
+      </section>
+      <!-- col 6 options -->
+      <section class="col-md-12">
+        <h2>Delivery Infomation</h2>
+          <div class="form-group">
+            <label for="address">Address (street, city, zip)</label>
+              <input type="text" class="form-control" id="address" placeholder="Denver, CO">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+              <input type="text" class="form-control" id="phone" placeholder="303.xxx.xxxx">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="note">Note</label>
+              <input type="text" class="form-control" id="note" placeholder="Less cheese please!">
+          </div>
+      </section>
+      <!-- submit -->
+      <section class="col-md-12">
+        <h2>Submit your order</h2>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </section>
+      <!-- total -->
+      <section class="col-md-12">
+        <h2>Your order info</h2>
+        <p class="pizza"></p>
+        <p>Subtotal</p>
+        <p>Tax</p>
+        <p>Delivery Fee</p>
+        <p>Total</p>
+        <p>Tip 15%</p>
+      </section>
+    </form>
+    </main>
+
+    <!-- margin right -->
+    <div class="col-md-1">
+    </div>
+
+    <footer>
+      <div class="col-md-12">
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
