@@ -5,82 +5,86 @@
     <title>Form Validation</title>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <hearder>
+    <header>
       <div class="col-md-12">
-        <h1 class="text-center">Pizza Pizza Pizza</h1>
+        <h1>~ Pizza ~</h1>
       </div>
     </header>
-
-
     <!-- margin left -->
-    <div class="col-md-1">
+    <div class="col-md-1 col-xs-12">
     </div>
     <!-- main -->
-    <main class="col-md-10">
+    <main class="col-md-10 col-xs-12">
       <!-- col 1 size -->
-    <form>
-      <section class="col-md-4">
-        <h2>Size (choose at least one)</h2>
-        <div class="checkbox">
+    <form class="placeOrder">
+      <section class="col-md-4 col-xs-12">
+        <h2>Size</h2>
+        <p>Please choose one.</P>
+        <div class="sizeCheck">
           <label>
-            <input type="checkbox" value="small" name="size">
-                SMALL
+            <input type="checkbox" value="small" name="size" onclick="enableOptions(this)">
+                SMALL: $5.00
           </label>
         </div>
-        <div class="checkbox">
+        <div class="sizeCheck">
           <label>
-            <input type="checkbox" value="medium" name="size">
-                MEDIUM
+            <input type="checkbox" value="medium" name="size" onclick="enableOptions(this)">
+                MEDIUM: $10.00
           </label>
         </div>
-        <div class="checkbox">
+        <div class="sizeCheck">
           <label>
-            <input type="checkbox" value="large" name="size">
-                LARGE
+            <input type="checkbox" value="large" name="size" onclick="enableOptions(this)">
+                LARGE: $15.00
           </label>
         </div>
       </section>
       <!-- col 2 crust -->
-      <section class="col-md-4">
-        <h2>Crust (choose at least one)</h2>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="white" name="crust">
-              WHITE
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="wheat" name="crust">
-              WHEAT
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="gluten-free" name="crust">
-              GLUTEN-FREE
-          </label>
-        </div>
+      <section class="col-md-4 col-xs-12">
+          <h2>Crust</h2>
+          <p>Please choose one.</P>
+          <div class="crustCheck">
+            <label>
+              <input type="checkbox" value="white" name="crust">
+                WHITE
+            </label>
+          </div>
+          <div class="crustCheck">
+            <label>
+              <input type="checkbox" value="wheat" name="crust">
+                WHEAT
+            </label>
+          </div>
+          <div class="crustCheck">
+            <label>
+              <input type="checkbox" value="gluten-free" name="crust">
+                GLUTEN-FREE
+            </label>
+          </div>
+
       </section>
       <!-- col 3 sauces -->
-      <section class="col-md-4">
-        <h2>Sauces (choose at least one)</h2>
-        <div class="checkbox">
+      <section class="col-md-4 col-xs-12">
+        <h2>Sauces</h2>
+        <p>Please choose one.</P>
+        <div class="sauceCheck">
           <label>
             <input type="checkbox" value="tomato" name="sauce">
               ROBUST TOMATO
           </label>
         </div>
-        <div class="checkbox">
+        <div class="sauceCheck">
           <label>
             <input type="checkbox" value="bbq" name="sauce">
               SPICY BBQ
           </label>
         </div>
-        <div class="checkbox">
+        <div class="sauceCheck">
           <label>
             <input type="checkbox" value="cream" name="sauce">
               CREAMY CREAM (+$1.50)
@@ -90,175 +94,205 @@
       <!-- col 4 toppings -->
       <section class="col-md-12">
         <h2>Toppings ($0.75 each)</h2>
-        <div class="col-md-4">
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="sausage" name="topping">
+      </section>
+      <section class="col-md-4 col-xs-12">
+        <div class="toppingCheck">
+          <label>
+            <input type="checkbox" value="sausage" name="topping">
                 SAUSAGE
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="pepperoni" name="topping">
+          </label>
+        </div>
+        <div class="toppingCheck">
+          <label>
+            <input type="checkbox" value="pepperoni" name="topping">
                 PEPPERONI
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="bacon" name="topping">
+          </label>
+        </div>
+        <div class="toppingCheck">
+          <label>
+            <input type="checkbox" value="bacon" name="topping">
                 BACON (+$0.50 extra)
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="salami" name="topping">
+          </label>
+        </div>
+        <div class="toppingCheck">
+          <label>
+            <input type="checkbox" value="salami" name="topping">
                 SALAMI
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="ham" name="topping">
+          </label>
+        </div>
+        <div class="toppingCheck">
+          <label>
+            <input type="checkbox" value="ham" name="topping">
                 HAM
-            </label>
-          </div>
+          </label>
         </div>
-        <div class="col-md-4">
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="chichen" name="topping">
+      </section>
+      <section class="col-md-4 col-xs-12">
+        <div class="toppingCheck">
+          <label>
+            <input type="checkbox" value="chicken" name="topping">
                 CHICKEN (+$0.50 extra)
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="feta" name="topping">
-                FETA CHEESE
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="soy" name="topping">
-                SOY CHEESE
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="banana" name="topping">
-                BANANA PEPPERS
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="jalapeno" name="topping">
-                JALAPENO PEPPERS
-            </label>
-          </div>
+          </label>
         </div>
-        <div class="col-md-4">
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="onion" name="topping">
+        <div class="toppingCheck">
+          <label>
+            <input type="checkbox" value="feta" name="topping">
+                FETA CHEESE
+          </label>
+        </div>
+        <div class="toppingCheck">
+          <label>
+            <input type="checkbox" value="soy" name="topping">
+                SOY CHEESE
+          </label>
+        </div>
+        <div class="toppingCheck">
+          <label>
+            <input type="checkbox" value="banana" name="topping">
+                BANANA PEPPERS
+          </label>
+        </div>
+        <div class="toppingCheck">
+          <label>
+            <input type="checkbox" value="jalapeno" name="topping">
+                JALAPENO PEPPERS
+          </label>
+        </div>
+      </section>
+      <section class="col-md-4 col-xs-12">
+        <div class="toppingCheck">
+          <label>
+            <input type="checkbox" value="onion" name="topping">
                 ONION
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="olives" name="topping">
+          </label>
+        </div>
+        <div class="toppingCheck">
+          <label>
+            <input type="checkbox" value="olives" name="topping">
                 OLIVES
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="pineapple" name="topping">
+          </label>
+        </div>
+        <div class="toppingCheck">
+          <label>
+            <input type="checkbox" value="pineapple" name="topping">
                 PINEAPPLE
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="mushrooms" name="topping">
+          </label>
+        </div>
+        <div class="toppingCheck">
+          <label>
+            <input type="checkbox" value="mushrooms" name="topping">
                 MUSHROOMS
-            </label>
-          </div>
+          </label>
+        </div>
       </section>
       <!-- col 5 options -->
       <section class="col-md-12">
         <h2>Other options</h2>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="extra-cheese" name="option">
+            <input type="checkbox" value="extra cheese" name="option">
               EXTRA CHEESE (+$1.00 extra)
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="bread-sticks" name="option">
+            <input type="checkbox" value="bread sticks" name="option">
                 ADD BREAD STICKS TO ORDER (+$5.00 extra)
           </label>
         </div>
       </section>
       <!-- col 6 delivery -->
       <section class="col-md-12">
-        <h2>Delivery or Pickup?</h2>
-        <p>$5.00 Delivery Fee.</p>
-        <div class="checkbox">
+        <h2>Pickup or Delivery?</h2>
+        <div class="deliveryCheck">
           <label>
-            <input type="checkbox" value="true">
-              DELIVERY
+            <input type="checkbox" value=false>
+              PICKUP
           </label>
         </div>
-        <div class="checkbox">
+        <div class="deliveryCheck">
           <label>
-            <input type="checkbox" value="false">
-              PICKUP
+            <input type="checkbox" id="delivery" value=true name="delivery" onclick="enabledInfo(this)">
+              DELIVERY: $5.00 Delivery Fee.
           </label>
         </div>
       </section>
       <!-- col 6 options -->
       <section class="col-md-12">
         <h2>Delivery Infomation</h2>
-          <div class="form-group">
-            <label for="address">Address (street, city, zip)</label>
-              <input type="text" class="form-control" id="address" placeholder="Denver, CO">
+        <fieldset id ="info" disabled>
+          <div class="form-inline">
+            <label for="address">Address (street, apt.#, city, zip)</label>
+            <br>
+              <input type="text" style="width:200px;" class="form-control" id="address" placeholder="Street">
+              <input type="text" style="width:200px;" class="form-control" id="address" placeholder="Apt. #">
+              <input type="text" style="width:200px;" class="form-control" id="address" placeholder="City">
+              <input type="text"  pattern="^\d{5}$" style="width:200px;" class="form-control" id="address" placeholder="5 digit zip code">
           </div>
           <div class="form-group">
-            <label for="phone">Phone Number</label>
-              <input type="text" class="form-control" id="phone" placeholder="303.xxx.xxxx">
+            <label for="phone">Phone Number (format: xxx-xxx-xxxx)</label>
+              <input type="text" style="width:200px;" pattern="^\d{3}-\d{3}-\d{4}$" class="form-control" id="phone" placeholder="xxx-xxx-xxxx">
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Email">
+              <input type="email" style="width:200px;" class="form-control" id="email" placeholder="Email">
           </div>
           <div class="form-group">
             <label for="note">Note</label>
               <input type="text" class="form-control" id="note" placeholder="Less cheese please!">
           </div>
+        <fieldset>
       </section>
-      <!-- submit -->
+      <!-- place order -->
+      <section class="col-md-12 placeOrderBox">
       <section class="col-md-12">
-        <h2>Submit your order</h2>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="placeOrder btn btn-default">Place Order</button>
+        <h2 class="warningTitle"></h2>
+        <p class="warning"></p>
       </section>
       <!-- total -->
       <section class="col-md-12">
-        <h2>Your order info</h2>
-        <p class="pizza"></p>
-        <p>Subtotal</p>
-        <p>Tax</p>
-        <p>Delivery Fee</p>
-        <p>Total</p>
-        <p>Tip 15%</p>
+        <h2 class="info">Order info</h2>
+      </section>
+      <section class="col-md-6 col-xs-12">
+        <p class="sub">Subtotal: </p>
+        <p class="tax">Tax (8%): </p>
+        <p class="fee">Delivery Fee: </p>
+        <p class="total">Total: </p>
+        <p class="tip">Suggestion Tip (15%): </p>
+      </section>
+      <section class="col-md-6 col-xs-12">
+        <p class="size">Size: </p>
+        <p class="crust">Crust: </p>
+        <p class="sauce">Sauce: </p>
+        <p class="topping">Topping: </p>
+        <p class="option">Options: </p>
       </section>
     </form>
-    </main>
-
-    <!-- margin right -->
-    <div class="col-md-1">
-    </div>
-
+    <form class="order">
+      <!-- submit -->
+      <section class="col-md-12">
+        <button type="submit" class="btn btn-default">Order</button>
+      </section>
+    </form>
+    </section>
     <footer>
-      <div class="col-md-12">
+      <div class="col-md-8 col-xs-12">
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <p>Company Info</p>
+        <p>Phone Number: xxx-xxx-xxxx</p>
+        <p>Address: Denver, Colorado</p>
+        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
       </div>
     </footer>
+    </main>
+    <!-- margin right -->
+    <div class="col-md-1 col-xs-12">
+    </div>
+
     <!-- scripts -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
