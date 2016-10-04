@@ -29,7 +29,7 @@ $('.placeOrder').on('submit', function(el) {
   validateOrder();
 });
 
-var total =0;
+var total = 0;
 var deliveryFee = 0;
 var OrderInfo = {
   size: '',
@@ -84,14 +84,14 @@ function toppingExtra() {
 }
 
 function option() {
-  (OrderInfo.option).map(function (index, el) {
-    if (el === 'cheese') {
+  for (var i = 0; i < OrderInfo.option.length; i++) {
+    if (OrderInfo.option[i] === 'extra cheese') {
       total += 1.00;
     }
-    if (el === 'bread') {
+    if (OrderInfo.option[i] === 'bread sticks') {
       total += 5.00;
     }
-  });
+  }
 }
 
 function deliveryInfo() {
@@ -117,11 +117,11 @@ function validateOrder() {
     $('.warningTitle'). append('<h2>Order Warning</h2>');
   }
   if (a === undefined) {
-    $('.warning').append('<p>Please choose size beore order.</p>');
+    $('.warning').append('<p>* Please choose size beore order.</p>');
   } if (b === undefined) {
-    $('.warning').append('<p>Please choose crust beore order.</p>');
+    $('.warning').append('<p>* Please choose crust beore order.</p>');
   } if (c === undefined) {
-    $('.warning').append('<p>Please choose sauce beore order.</p>');
+    $('.warning').append('<p>* Please choose sauce beore order.</p>');
   }
   return false;
 }

@@ -27,19 +27,19 @@
         <p>Please choose one.</P>
         <div class="sizeCheck">
           <label>
-            <input type="checkbox" value="small" name="size" onclick="enableOptions(this)">
+            <input type="checkbox" value="small" name="size">
                 SMALL: $5.00
           </label>
         </div>
         <div class="sizeCheck">
           <label>
-            <input type="checkbox" value="medium" name="size" onclick="enableOptions(this)">
+            <input type="checkbox" value="medium" name="size">
                 MEDIUM: $10.00
           </label>
         </div>
         <div class="sizeCheck">
           <label>
-            <input type="checkbox" value="large" name="size" onclick="enableOptions(this)">
+            <input type="checkbox" value="large" name="size">
                 LARGE: $15.00
           </label>
         </div>
@@ -188,16 +188,16 @@
       <!-- col 5 options -->
       <section class="col-md-12">
         <h2>Other options</h2>
-        <div class="checkbox">
+        <div class="optionCheck">
           <label>
             <input type="checkbox" value="extra cheese" name="option">
               EXTRA CHEESE (+$1.00 extra)
           </label>
         </div>
-        <div class="checkbox">
+        <div class="optionCheck">
           <label>
             <input type="checkbox" value="bread sticks" name="option">
-                ADD BREAD STICKS TO ORDER (+$5.00 extra)
+              BREAD STICKS (+$5.00 extra)
           </label>
         </div>
       </section>
@@ -220,7 +220,7 @@
       <!-- col 6 options -->
       <section class="col-md-12">
         <h2>Delivery Infomation</h2>
-        <fieldset id ="info" disabled>
+        <fieldset id ="info">
           <div class="form-inline">
             <label for="address">Address (street, apt.#, city, zip)</label>
             <br>
